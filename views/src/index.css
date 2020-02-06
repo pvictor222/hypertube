@@ -1,0 +1,1000 @@
+/*** FOOTER ***/
+
+.footer {
+    background-color: rgb(255, 255, 255);
+    color: blacks;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*** ERROR 404 PAGE NOT FOUND ***/
+
+.page_not_found {
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.page_not_found > h1 {
+    color: white;
+}
+
+/***** check_email *****/
+
+.check_email{
+    margin-top: 100px;
+}
+/*** PUBLIC PROFILE ***/
+
+.user_popup {
+    cursor: pointer;
+}
+
+.user_popup:hover {
+    color: blue;
+}
+
+.user_popup_div {
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+    width: 50%;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(31, 29, 29, 0.804);
+    color: white;
+}
+
+.close_user_popup {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 5%;
+}
+
+.profile_public_picture {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    max-height: 50%;
+    max-width: 50%;
+}
+
+.menu-item {
+    padding: 0 40px;
+    margin: 5px 10px;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+}
+
+.menu-item-wrapper.active {
+    border: 1px blue solid;
+}
+
+.menu-item.active {
+    border: 1px green solid;
+}
+
+.scroll-menu-arrow {
+    padding: 20px;
+    cursor: pointer;
+}
+
+/*** BODY ***/ 
+
+body {
+    background-color: #e2e2e2 !important;
+}
+
+/*** NAV ***/
+
+.ul-perso {
+    list-style: none;
+}
+
+.navbar-perso {
+    margin-top : -1px;
+    margin-bottom: 0;
+    display: inline;
+}
+
+.right-element {
+    display: inline;
+    margin-right: 10px ;
+    text-decoration: none;
+}
+
+.center-element {
+    text-align: center;
+    padding-right: 25vw;
+    padding-left: 28vw;
+}
+
+.navbar-brand , .nav-link, .my-form, .login-form
+{
+    font-family: Raleway, sans-serif;
+}
+.navlink_picture {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.btn-style{
+    margin : 0 0 0 0 !important;
+}
+.btn-success {
+    color:  #9e9e9ec2 !important;
+    background-color: white !important;
+    border-color: #02fc7e !important;
+}
+.btn-dark {
+    border: solid 0.5px !important;
+    margin: 5px !important;
+}
+
+.btn-success:hover {
+    color: #1f1f1fab !important;
+    background-color: #9e9e9ec2 !important;
+    border-color: #02fc7e !important;
+}
+
+.btn-style-logout{
+    margin : 0 0 0 0 !important;
+}
+.btn-success-logout {
+    color:  #cfa9a9c2 !important;
+    background-color: white !important;
+    border-color: #fc0202 !important;
+}
+
+.btn-success-logout:hover {
+    color: #1f1f1fab !important;
+    background-color: #7a6565c2 !important;
+    border-color: #fc0202 !important;
+}
+
+/*****     ADVANCED SEARCH (FROM NAV)     *****/
+
+/* Make div appear */
+
+.AdvancedSearchDiv {
+    left: 0;
+   text-align: right;
+    color:  #9e9e9ec2 !important;
+    /* position: fixed; */
+    padding-top: 4%;
+    /* overflow: scroll; */
+    width: 25%;
+    height: 100%;
+    z-index: 1;
+    /* CSS ANIMATIONS */
+    -webkit-animation-name: AdvancedSearchDiv; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: AdvancedSearchDiv;
+    animation-duration: 1s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes AdvancedSearchDiv {
+    from {left: -100%;}
+    to {left: 0;}
+}
+
+/* Standard syntax */
+@keyframes AdvancedSearchDiv {
+    from {left: -100%;}
+    to {left: 0;}
+}
+.card-body {
+    
+    box-shadow: 0 20px 40px rgba(0,0,0,.04) !important;
+
+
+}
+/* Make div appear */
+.DisappearSearchDiv {
+    left: -100%;
+    text-align: center;
+    color:  #9e9e9ec2 !important;
+    position: fixed;
+    /* overflow: scroll; */
+    height: 100%;
+    z-index: 1;
+    /* CSS ANIMATIONS */
+    -webkit-animation-name: DisappearSearchDiv; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: DisappearSearchDiv;
+    animation-duration: 1s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes DisappearSearchDiv {
+    from {left: 0;}
+    to {left: -100%;}
+}
+
+/* Standard syntax */
+@keyframes DisappearSearchDiv {
+    from {left: 0;}
+    to {left: -100%;}
+}
+
+/*****     ACCOUNT (FROM NAV)     *****/
+
+.account_input {
+    height: 50px;
+}
+
+/* Make the div appear */
+.AccountDiv {
+    text-align: center;
+    color:  #9e9e9ec2 !important;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    /* overflow: scroll; */
+    z-index: 1;
+    /* CSS ANIMATIONS */
+    -webkit-animation-name: AccountDiv; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: AccountDiv;
+    animation-duration: 1s;
+    right: 0;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes AccountDiv {
+    from {right: -100%;}
+    to {right: 0;}
+}
+
+/* Standard syntax */
+@keyframes AccountDiv {
+    from {right: -100%;}
+    to {right: 0;}
+}
+
+/* Make the div disappear */
+.DisappearAccountDiv {
+    right: -100%;
+    text-align: center;
+    color:  #9e9e9ec2 !important;
+    position: fixed;
+    height: 100%;
+    /* overflow: scroll; */
+    z-index: 1;
+    /* CSS ANIMATIONS */
+    -webkit-animation-name: DisappearAccountDiv; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: DisappearAccountDiv;
+    animation-duration: 1s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes DisappearAccountDiv {
+    from {right: 0;}
+    to {right: -100%;}
+}
+
+/* Standard syntax */
+@keyframes DisappearAccountDiv {
+    from {right: 0;}
+    to {right: -100%;}
+}
+
+.profile_picture_row {
+    height: 50%;
+}
+
+.profile_picture {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 3%;
+}
+
+ /* The switch - the box around the slider */
+ .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 15px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: black;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px black;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(42px);
+    -ms-transform: translateX(42px);
+    transform: translateX(42px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } 
+
+
+
+/*****      HOME PAGE      ******/
+.image img{
+    height: 80%;
+    width: 80%;
+}
+
+.col-sm-3 h3, .col-sm-3 h4, .col-sm-3 h5{
+	text-align: center;
+}
+
+.col-sm-3 img{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1.jumbotron span{
+	color:red;
+}
+
+.col-sm-3 h5 {
+    padding: 3% 9%;
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    color: rgb(229, 255, 0);
+    font-size: 1.42rem;
+}
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 42px;
+    /* color: rgb(229, 255, 0); */
+    font-size: 1.42rem;
+}
+
+
+/*****       MAIN DIV            ****/
+
+.main-all{
+    margin-top: 4vw;
+    margin-bottom: 2vw
+}
+
+
+
+/***** PAGE DE FILM *****/
+
+.rating { 
+    border: none;
+    float: left;
+  }
+  
+  .rating > input { display: none; } 
+  .rating > label:before { 
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+  }
+  
+  .rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+  }
+  
+  .rating > label { 
+    color: #ddd; 
+   float: right; 
+  }
+  
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+  .rating > input:checked ~ label, /* show gold star when clicked */
+  .rating:not(:checked) > label:hover, /* hover current star */
+  .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+  
+  .rating > input:checked + label:hover, /* hover current star when changing rating */
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+  .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+.carousel-inner img {
+    width: 30%;
+  }
+
+.list-films {
+    list-style: none;
+}
+
+.trailer-div {
+    margin-bottom: 2.5vw;
+    min-height: 400px;
+}
+
+.comment{
+    background: #5f5656;
+}
+
+/* By hiding the .overlay element by default, 
+we use the selector .image:hover .overlay 
+to change the styling on hover. 
+Due to the HTML structure, this works well because .overlay 
+is a descendant element. */
+/*
+.image {
+  position:relative;
+   display:inline-block;
+}
+*/
+
+.play_hover{
+text-align: center;
+padding: 5%;
+}
+
+.btn-info {
+    color: #1f1f1fab !important;
+    background-color: #9e9e9ec2 !important;
+    border-color: #02fc7e !important;
+}
+
+.btn-info:hover {
+    color:  #9e9e9ec2 !important;
+    background-color: white !important;
+    border-color: #02fc7e !important;
+}
+
+.resume_film{
+    padding: 10%;
+}
+
+.overlay {
+    font-size: 0.5vw;
+}
+.overlay {
+   display:none;
+}
+.image:hover .overlay {
+    width: 65%;
+    height: 90%;
+    background:rgba(0,0,0,.75);
+    color: #e2e2e2;
+    position:absolute;
+    padding: 10%;
+    top:45%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
+    border-style: solid 1px #5f5656;
+
+    display:inline-block;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding: 9%;
+
+   
+}
+.overlay_car {
+    display:none;
+ }
+
+ .similar_movies {
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+ }
+
+/**** CREATE ACCOUNT ****/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+body{
+    margin: 0;
+    font-size: 1.42rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    text-align: left;
+    background-color: #f5f8fa;
+}
+
+
+
+.my-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.my-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.login-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.login-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.img_auth 
+{
+    max-height: 50px;
+    max-width: auto;
+}
+
+/****** OAuth account ******/
+
+.preloader {
+    display: flex;
+    height: 50vh;
+    transition: opacity 0.3s linear;
+    width: 100%;
+    z-index: 9999;
+}
+
+/********* ACCOUNT *****/
+
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-right: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-right: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 250px;
+    width: 0;
+    height: 100%;
+    margin-right: -250px;
+    /* overflow-y: auto; */
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-right: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-right: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 60%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+/***** QUERIES ******/
+
+/* VERY SMALL SCREENS */
+@media (max-width: 300px) {
+    .list-films-all, .under, .AccountDiv{
+        position: static;
+        margin-top : 60vw;
+    }
+    .under{
+        background-color: #f8f9faf0;
+    }
+    .image:hover .overlay_car {
+        width: 46%;
+        height: 41%;
+        background: rgba(0,0,0,.75);
+        color: #e2e2e2;
+        position: absolute;
+        transform: translate(-99%, 0%);
+        display: inline-block;
+    }
+    .AdvancedSearchDiv {
+        position: fixed;
+        width: 50%;
+    }
+}
+
+/* QUITE SMALL SCREENS */
+@media (min-width: 300px) {
+    .list-films-all, .under, .under_dark, .AccountDiv{
+        position: static;
+        margin-top : 55vw;
+    }
+    .under {
+        background-color: #f8f9faf0;
+    }
+    .image:hover .overlay_car {
+        width: 46%;
+        height: 41%;
+        background: rgba(0,0,0,.75);
+        color: #e2e2e2;
+        position: absolute;
+        transform: translate(-99%, 0%);
+        display: inline-block;
+    }
+    .AdvancedSearchDiv {
+        position: fixed;
+        width: 50%;
+     }
+}
+
+/* BIG PHONES */
+ @media (min-width: 360px) {
+    .list-films-all, .under, .under_dark, .AccountDiv{
+        position: static;        
+        margin-top : 40vw;
+    }
+    .under{
+        background-color: #f8f9faf0;
+    }
+    .image:hover .overlay_car {
+        width: 100%;
+        height: 97%;
+        padding-top: 8%;
+        background: rgba(0,0,0,.75);
+        color: #e2e2e2;
+        position: absolute;
+        transform: translate(-64%, 0%);
+        display: inline-block;
+    }
+    .AdvancedSearchDiv {
+        position: fixed;
+        width: 50%;
+     }
+    
+ }
+
+/* MEDIUM SCREENS*/
+@media (min-width: 576px) {
+        .list-films-all, .under, .under_dark, .AccountDiv{
+            position: static;        
+            margin-top : 25vw;
+        }
+        .under{
+            background-color: #f8f9faf0;
+        }
+        .image:hover .overlay_car {
+            width: 54%;
+            height: 95%;
+            padding: 5%;
+            background: rgba(0,0,0,.75);
+            color: #e2e2e2;
+            position: absolute;
+            transform: translate(-77%, 0%);
+            display: inline-block;
+        }
+        .AdvancedSearchDiv {
+            /* position: fixed; */
+            width: 42%;
+         }
+        
+     }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+        .navbar-brand.abs
+        {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            text-align: center;
+        }
+    .btn.btn-success 
+        {
+            /* position: absolute !important; */
+            width: 100% !important;
+            right: 0 !important;
+        }
+        .list-films-all, .under, .under_dark, .AccountDiv{
+            position: static;
+            margin-top : 14%;
+        }
+        .under{
+            background-color: #f8f9faf0;
+        }
+        .image:hover .overlay_car {
+            width: 31%;
+            height: 94%;
+            padding: 3%;
+            background: rgba(0,0,0,.75);
+            color: #e2e2e2;
+            position: absolute;
+
+            transform: translate(-99%, 0%);
+            display: inline-block;
+        }
+        .AdvancedSearchDiv {
+            /* position: fixed; */
+            width: 100%;
+            text-align: center;
+            height: 27%;
+         }
+        
+      }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+        .list-films-all, .under .under_dark {
+            position: static;
+            margin-top : 15vw;
+        }
+        .under {
+            background-color: #f8f9faf0;
+        }
+        .image:hover .overlay_car {
+            width: 31%;
+            height: 96%;
+            padding: 6%;
+            background: rgba(0,0,0,.75);
+            color: #e2e2e2;
+            position: absolute;
+
+            transform: translate(-99%, 0%);
+            display: inline-block;
+        }
+        .AccountDiv{
+            position: fixed;
+            margin-top : 5%;
+            right: 0;
+        }
+        .list-films-all{
+            /* padding-top: 31%; */
+        }
+        .AdvancedSearchDiv {
+            left: 0;
+            text-align: left;
+            color: #9e9e9ec2 !important;
+            padding-top: 7%;
+            position: fixed;
+            width: 70%;
+            padding-bottom: 266px;
+            text-align: center;
+            z-index: 1;
+            -webkit-animation-name: AdvancedSearchDiv;
+            -webkit-animation-duration: 1s;
+            animation-name: AdvancedSearchDiv;
+            animation-duration: 1s;
+        }      
+      }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+
+
+
+@media (min-width: 1200px) { 
+    .list-films-all {
+        position: static;
+        margin-top : 15vw;
+    }
+    .AccountDiv{
+        position: fixed;
+        margin-top : 0;
+    }
+    .AdvancedSearchDiv {
+        position: fixed;
+        width: 15%;
+        height: 100%; 
+        
+     }
+    .under{
+        margin-top : 8%;
+        background-color: #f8f9faf0;
+    }
+    .image:hover .overlay_car {
+        width: 31%;
+        height: 96%;
+        padding: 5%;
+        background: rgba(0,0,0,.75);
+        color: #e2e2e2;
+        position: absolute;
+        transform: translate(-99%, 0%);
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1560px) { 
+    .list-films-all {
+        position: static;
+        margin-top : 7vw;
+    }
+}
+
+@media (min-width: 2560px) { 
+    .list-films-all {
+        position: static;
+        margin-top : 0vw;
+    }
+    .AccountDiv{
+        position: fixed;
+        margin-top : 0;
+    }
+    .AdvancedSearchDiv {
+    
+        width: 19%;
+        height: 32%;
+        padding-top: 1%;
+    }
+    .under{
+        margin-top : 0;
+        background-color: #f8f9faf0;
+    }
+    .image:hover .overlay_car {
+        width: 31%;
+        height: 98%;
+        background: rgba(0,0,0,.75);
+        color: #e2e2e2;
+        position: absolute;
+        padding: 3%;
+        transform: translate(-99%, 0%);
+        display: inline-block;
+    }
+}
+
+/* ||||||||||||||| PLAY PAGE ||||||||||||||||| */
+
+.poster {
+    text-align: center;
+}
+
+.film-container {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.movie_not_found {
+    text-align: center;
+}
+video::-webkit-media-controls-timeline {
+    display:none;
+  }
