@@ -1,4 +1,4 @@
-let con = require('./model/db_connect').con1;
+let con = require('./model/db_connect').con;
 
 function createTables () {
     return (new Promise((resolve, reject) => {
@@ -26,7 +26,7 @@ function createTables () {
             }
         })
         //Create table ratings
-        con.query('CREATE TABLE ratings (rating_ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY NOT NULL, film_ID INT(11) UNSIGNED, user_ID INT(11) UNSIGNED, rating DEC(3, 1) UNSIGNED, date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP)', [], (err) => {
+        con.query('CREATE TABLE ratings (rating_ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY NOT NULL, film_ID INT(11) UNSIGNED, user_ID TEXT, rating DEC(3, 1) UNSIGNED, date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP)', [], (err) => {
             if (err) {
                 console.log(err.stack);
                 reject('Failed to create ratings');
